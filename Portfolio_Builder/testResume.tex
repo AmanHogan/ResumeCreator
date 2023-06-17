@@ -1,0 +1,255 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape AMAN HOGAN-BAILEY} \\ \vspace{3pt}
+    2026 Kings Forest Drive, Forney, TX 75126 \\ \vspace{3pt}
+    \small \raisebox{-0.1\height}\faPhone\ 214-900-7302 ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  {aman.hogan-bailey@mavs.uta.edu}} ~ 
+    \href{https://www.linkedin.com/in/aman-hogan-bailey/}{\raisebox{-0.2\height}\faLinkedin\ {linkedin.com/in/aman-hogan-bailey}}  ~
+    \href{https://github.com/AmanHogan}{\raisebox{-0.2\height}\faGithub\ {github.com/AmanHogan}}
+    \vspace{3pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Texas at Arlington}{2020 -- 2023}
+      {Bachelor of Science in Computer Science}{GPA: 3.8/4.0}
+  \resumeSubHeadingListEnd
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small
+        {
+            \item
+            {
+                    \textbf{Languages}{: Assembly (ARM), C/C++, C\#, HTML, Java, JavaScript, LaTeX, MATLAB, .NET, Python, SQL, XML} \\
+                        \vspace{2pt}
+                    \textbf{Operating Systems}{: Linux, Pi OS, Ubuntu, VxWorks, Windows} \\
+                                        \vspace{2pt}
+                    \textbf{Software/Developer Tools}{: Android Studio, Collaborator, Docker, Eclipse, Git/Gitlab, Jira, MS Office, NetBeans, \\ Postman, Putty, Telnet, Tera Term, Unreal Engine, Visual Studio, WinSCP, Wireshark} \\
+\vspace{3pt}
+                    \textbf{Relevant Coursework}{: Data Structures, Agile Methodologies, Object Oriented Design, Database Systems, \\ Algorithms Analysis, Network Systems, Functional Programming} \\ 
+                    \vspace{2pt}
+            }
+        }
+    \end{itemize}    
+
+\vspace{-15pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Software Engineer Intern}{Richardson, TX}
+    {Leonardo DRS}{June 2022 -- August 2022}
+      \resumeItemListStart
+        \resumeItem{Developed a collection of robust programs in VxWorks for embedded systems and RTOS and troubleshot for the optimal file transfer method.}
+        \resumeItem{Configured a bootable VxWorks image to load from a USB and successfully launched it from a target board.}
+        \resumeItem{Modified, debugged, and heavily documented existing code to improve maintainability, readability, and flexibility.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    {Electrical Engineering Research Assistant}{Arlington, TX}
+      {University of Texas at Arlington}{Feb 2022 -- May 2022}
+      \resumeItemListStart
+        \resumeItem{ Assist in the additional research and data collection of arc- flashes 
+using DC systems with lithium-ion batteries.}
+        \resumeItem{Analyze mathematical models from published papers that predict the incident 
+energies of arc-flashes to derive the appropriate real-world applications.}
+
+  \resumeItem{Verified the accuracy of experimental data to highlight any inconsistencies with previous models and experiments.
+}
+      
+    \resumeItemListEnd
+
+     \resumeSubheading
+    {College of Engineering Co-Instructor}{Arlington, TX}
+      {University of Texas at Arlington}{August 2021 -- December 2021}
+      \resumeItemListStart
+        \resumeItem{Taught a semester comprised of over 30+ students on how to achieve academic 
+success in the college of engineering.
+}
+        \resumeItem{Rigorously graded assignments and projects, providing actionable feedback to help
+students attain success in college.
+}
+  \resumeItem{Prepared robust, comprehensive lesson plans for the class while providing regular, 
+additional 1:1 academic coaching to students.
+}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+
+      \resumeProjectHeading
+        {\textbf{FAT32 Disk Image Reader} $|$ \emph{C}}{March 2022}
+                    \resumeItemListStart
+                        \resumeItem{Implemented logical block addressing to bypass volume ID, reserved sectors, FAT1 and FAT2, to access the clusters within a FAT32 image file.}
+                        \resumeItem{Implemented a bash shell interface to traverse, delete, and copy files and directories in a FAT32 disk image.}
+                    \resumeItemListEnd
+                      \vspace{-13pt}
+
+                           \resumeProjectHeading
+        {\textbf{Multi-threading of Mandelbrot Fractal } $|$ \emph{C}}{February 2022}
+            \resumeItemListStart
+                \resumeItem{Implemented escape time algorithm to calculate the colors in the bitmap of the Mandelbrot set.}
+                \resumeItem{Utilized parallelism and multi-threading to generate bitmaps of the Mandelbrot fractal, increasing the time efficiency. }
+          \resumeItemListEnd 
+                      \vspace{-13pt}
+
+    
+      \resumeProjectHeading
+          {\textbf{On-Demand Home Service App} $|$ \emph{Java, XML}}{January 2022}
+            \resumeItemListStart
+                \resumeItem{Improved the app entry point speed by 80\% by streamlining the activity logic in the platform's application model.}
+                \resumeItem{Designed and developed the UI, event and adapter logic, and local database functionality.}
+            \resumeItemListEnd
+            \vspace{-13pt}
+                            \resumeProjectHeading
+        {\textbf{3D Platformer } $|$ \emph{UE4, Visual Blueprint Scripting, C++}}{May 2021}
+                    \resumeItemListStart
+                        \resumeItem{Developed a procedurally generated textured terrain through linear interpolation and heightmap manipulation.}
+                        \resumeItem{Designed original assets, layouts, and animations and applied spawn, collision, and item logic to them through C++ and visual blueprint scripting.}
+                    \resumeItemListEnd
+                      \vspace{-13pt}
+
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+%
+
+\end{document}

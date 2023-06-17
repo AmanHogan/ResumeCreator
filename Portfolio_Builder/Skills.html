@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Resume Creator </title>
+
+    <link rel = "stylesheet" href = "header_files/header.css">
+    <link rel = "stylesheet" href = "Test.css">
+    <script src = "Skills.js" defer> </script>
+    
+
+   
+      
+    <!-- Tool Bar -->
+    <div class = "header">
+        <div class = "banner">
+            <div class = "banner-text">  RESUME CREATOR </div>
+        </div>
+    </div>
+
+</head>
+    
+
+<body>
+    
+    <div class = "body-grid">
+
+        <!-- Titles -->
+        <div class = "resume-input-title">  PROPERTIES </div>
+        <div class = "resume-view-title"> VIEW </div>
+        
+        <div class = "input-resume" id="input-resume">
+            
+            <div>
+                <!--
+                    Input Languages,
+                    Operating Systems,
+                    Developer Tools,
+                    Relevant Coursework
+                -->
+                <div id="tech-skills-section" style="display: grid; grid-template-rows: 1fr 1fr 1fr 1fr 1fr; margin-bottom: 8px; margin-right: 30px; row-gap: 60px;">
+                    <textarea id = "languages-input" class="text-area-input" placeholder="Languages"></textarea>
+                    <textarea id = "systems-input" class="text-area-input" placeholder="Operating Systems"></textarea>
+                    <textarea id = "tools-input" class="text-area-input" placeholder="Developer Tools"></textarea>
+                    <textarea id = "coursework-input" class="text-area-input" placeholder="Relevant Coursework"></textarea>
+                    <button class = "button-style" id="go-to-work-section"> Go to work Experience </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class = "resume-view" id="resume-view">
+            <div style="width: 816px;">
+
+                <div class="resume-title" id="resume-title"> YOUR FULL NAME </div>
+                
+                <!-- Display Address -->
+                <div class="address-section">
+                    <div class="address1" id="address1"> Address, </div>
+                    <div class="address2" id="address2"> City, </div>
+                    <div class="address3" id="address3"> State, Zip Code </div>
+                </div>
+                
+                <!-- Display Education Details Top-->
+                <div class="section-title" id="education-title"> Education </div>
+                <div class="bar"> </div>
+                <div class="education1">
+                    <div class = "bold-left" id = "resume-college">The Name of Your University</div>
+                    <div class = "bold-right" id="resume-year">
+                        <div class="entry-start" id="grad-year-start"> Start </div>
+                        <div class="entry-mid"> - </div>
+                        <div class="entry-end" id="grad-year-end"> End </div>
+                    </div>
+                </div>
+
+                <!-- Display Education Details Bottom-->
+                <div class = "education2">
+                    <div class = "ital-left" id = "resume-degree">Your Degree Name</div>
+                    <div class = "ital-right" id = "person-gpa">
+                        <div class="entry-start"> GPA: </div>
+                        <div class="entry-mid" id="resume-gpa"> 0.0 </div>
+                        <div class="entry-end"> / 4.0 </div>
+                    </div>
+                </div>
+
+                <!-- Display Technical Skills -->
+                <div class="section-title" id="education-id"> Technical Skills </div>
+                <div class="bar"> </div>
+                <div class = "skill1">
+                    <div class = "skill-type" id = "person-major">Languages: </div>
+                    <div class = "skills-list" id = "skills-language"> </div>
+                </div>
+                <div class = "skill1">
+                    <div class = "skill-type" id = "person-major">Operating Systems: </div>
+                    <div class = "skills-list" id = "skills-operating"></div>
+                </div>
+                <div class = "skill1">
+                    <div class = "skill-type" id = "person-major">Software/Developer Tools: </div>
+                    <div class = "skills-list" id = "skills-developer"></div>
+                </div>
+                <div class = "skill1">
+                    <div class = "skill-type" id = "person-major">Relevant Coursework: </div>
+                    <div class = "skills-list" id = "skills-coursework"></div>
+                </div>
+
+
+                <!-- Display Projects -->
+                <div class="section-title" id="work-id"> Experience </div>
+                <div class="bar"> </div>
+                <div id="work-exp" > </div>
+                <div class="section-title" id="project-id" > Projects </div>
+                <div class="bar"> </div>
+                <div id="project-exp"> </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
