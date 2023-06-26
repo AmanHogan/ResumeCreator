@@ -1,0 +1,22 @@
+.header
+{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    align-items: center;
+    background-color: #303134;
+    position: fixed;
+    box-shadow: 2px 4px 4px black;}
+.banner-text
+{
+    color:#e8eaed;
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 16px;
+    font-family: Turis;
+    letter-spacing: 5px;
+}
+

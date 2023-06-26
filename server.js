@@ -9,12 +9,14 @@ app.set('view engine', 'ejs')
 // Render First Home Page
 app.get('/', (req, res) =>
 {
-    res.render('Education')
+    res.render('home')
 })
 
+
+
 // Links router with routes
-const userRouter = require('./routes/users')
-app.use('/users', userRouter)
+const userRouter = require('./routes/sections')
+app.use('/sections', userRouter)
 
 app.listen(3000)
 

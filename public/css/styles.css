@@ -1,0 +1,308 @@
+body
+{
+    margin: 0px; background-color: #202124; height: 4000px; padding-top: 76px;
+}
+
+.resume-view-title
+{
+    color:#e8eaed; font-weight: bold; font-size: 20px; letter-spacing: 5px;
+}
+
+.resume-input-title
+{
+    color:#e8eaed; font-weight: bold;font-size: 20px; letter-spacing: 5px;
+
+}
+
+
+.body-grid
+{
+    display: grid;
+    padding-left: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 1fr;
+    column-gap:100px;
+}
+
+.resume-view
+{
+    width: 816px;
+    height: 1056px;
+    background-color: aliceblue;
+}
+
+@font-face   {
+    font-family: Palatino Linotype; 
+    src: url("header_files/Pal.ttf")format('.ttf');
+}
+
+.resume-title{
+    color: black;
+    font-size: 28px;
+    width: fit-content;
+    font-family: "Palintino Linotype";
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 0px;
+    letter-spacing: 4px;
+    margin: auto;
+}
+
+.address-section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 32px;
+    margin-right: 32px;
+
+}
+
+.address1,.address2, .address3
+{
+    color: black;
+    font-size: 12px;
+    font-family: "Palintino Linotype";
+    margin-left: 4px;
+}
+
+.section-title
+{
+    color: black;
+    font-size: 18px;
+    width: fit-content;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 0px;
+    margin-left: 16px;
+}
+
+.bar
+{
+    background-color: black;
+    left: 0px;
+    right: 0px;
+    height: 3px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.education1
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 32px;
+    margin-right: 32px;
+    padding-top: 4px;
+}
+
+.bold-left
+{
+    color: black;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    justify-self: start;
+}
+
+.bold-right
+{
+    color: black;
+    font-size: 18px;
+    width: fit-content;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    justify-self: end;
+
+}
+
+.education2
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 32px;
+    margin-right: 32px;
+    padding-top: 4px;
+}
+
+
+.ital-left
+{
+    color: black;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    justify-self: start;
+    font-style: italic;
+}
+
+.ital-right
+{
+    color: black;
+    font-size: 18px;
+    width: fit-content;
+    font-family:'Times New Roman', Times, serif;
+    justify-self: end;
+    font-style: italic;
+}
+
+
+.entry-start, .entry-end, .entry-mid
+{
+    display: inline;
+    color: black;
+    font-size: 18px;
+    width: fit-content;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+
+.skill1
+{
+    margin-left: 32px;
+    margin-right: 32px;
+    padding-top: 4px;
+}
+
+.skill-type
+{
+    color: black;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    justify-self: start;
+    display: inline;
+}
+
+
+.skills-list
+{
+    color: black;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    justify-self: start;
+    display: inline;
+
+}
+
+
+.exp-title
+{
+    color: black;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    justify-self: start;
+}
+
+.exp-local
+{
+    color: black;
+    font-size: 18px;
+    width: fit-content;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    justify-self: end;
+}
+
+.exp-name
+{
+    color: black;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    justify-self: start;
+    font-style: italic;
+}
+
+.exp-date
+{
+    color: black;
+    font-size: 18px;
+    width: fit-content;
+    font-family:'Times New Roman', Times, serif;
+    justify-self: end;
+    font-style: italic;
+}
+
+
+
+.input-bar
+{
+    height: 60px;
+    background-color: #202124;
+    border-color: rgb(139, 139, 139);
+    border-radius: 5px;
+    color:#ffffff;
+    transition: opacity .15s;
+    box-shadow: 10px 5px 5px black;
+    padding-inline-start: 20px;
+    font-size: 25px;
+
+}
+
+
+.input-bar:hover
+{
+    background-color: #303134;
+    opacity: .7;
+
+}
+
+.button-style
+{
+    height: 60px;
+    background-color: #202124;
+    border-color: rgb(139, 139, 139);
+    border-radius: 5px;
+    color:#ffffff;
+    transition: opacity .15s;
+    box-shadow: 10px 5px 5px black;
+    font-size: 40px;
+}
+
+.button-style:hover
+{
+    background-color: #303134;
+    opacity: .7;
+}
+
+
+
+.input-three-inputs
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+.input-two-inputs
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+.text-area-input
+{
+
+    height: 100px;
+    background-color: #202124;
+    border-color: rgb(139, 139, 139);
+    border-radius: 5px;
+    color:#ffffff;
+    transition: opacity .15s;
+    box-shadow: 10px 5px 5px black;
+    font-size: 25px;
+    padding-inline-start: 20px;
+
+}
