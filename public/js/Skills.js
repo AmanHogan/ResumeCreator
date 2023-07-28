@@ -1,34 +1,21 @@
+
+let listOfSkills = [];
+let indexOfSkills = listOfSkills.length;
+
+
+
+
 var nextPageButton = document.getElementById("go-to-work-section");
 nextPageButton.addEventListener('click', goToWorkPage);
 
-educationObject = JSON.parse(localStorage.getItem("Education"));
-
-var resumeTitle = document.getElementById("resume-title");
-var resumeAddress1 = document.getElementById("address1");
-var resumeAddress2 = document.getElementById("address2");
-var resumeAddress3 = document.getElementById("address3");
-var resumeCollege = document.getElementById("resume-college");
-var resumeStartYear = document.getElementById("grad-year-start");
-var resumeEndYear = document.getElementById("grad-year-end");
-var resumeDegreeName = document.getElementById("resume-degree");
-var resumeGpa = document.getElementById("resume-gpa");
-
-resumeTitle.innerHTML = educationObject.name.toUpperCase();
-resumeAddress1.innerHTML = educationObject.address1;
-resumeAddress2.innerHTML = educationObject.address2;
-resumeAddress3.innerHTML = educationObject.address3;
-resumeCollege.innerHTML = educationObject.college;
-resumeStartYear.innerHTML = educationObject.startYear;
-resumeEndYear.innerHTML = educationObject.endYear;
-resumeDegreeName.innerHTML = educationObject.degree;
-resumeGpa.innerHTML = educationObject.gpa;
+var skillsButton = document.getElementById("addNewSectionButton");
+skillsButton.addEventListener('click', addNewTechnicalSkill);
 
 
 var languagesNameInput = document.getElementById("languages-input");
 var resumeSystemInput = document.getElementById("systems-input");
 var resumeToolsInput = document.getElementById("tools-input");
 var resumeCourseInput = document.getElementById("coursework-input");
-
 var languageName = document.getElementById("skills-language");
 var resumeSystem = document.getElementById("skills-operating");
 var resumeTool = document.getElementById("skills-developer");
@@ -38,8 +25,6 @@ languagesNameInput.addEventListener("input", function() {languageName.innerText 
 resumeSystemInput.addEventListener("input", function() {resumeSystem.innerText = resumeSystemInput.value;});
 resumeToolsInput.addEventListener("input", function() {resumeTool.innerText = resumeToolsInput.value;});
 resumeCourseInput.addEventListener("input", function() {resumeCourse.innerText = resumeCourseInput.value;});
-
-
 
 
 function goToWorkPage()
@@ -67,7 +52,32 @@ function goToWorkPage()
     
     window.location.href = "http://127.0.0.1:5500/WorkExperience.html";
 }
-    
 
 
+// Add event listener to the button
+var skillsButton = document.getElementById("addNewSectionButton");
+skillsButton.addEventListener('click', addNewTechnicalSkill);
 
+// Function to add a new skills section
+function addNewTechnicalSkill() {
+  // Create the container div for the new skills section
+  var newSkillsSection = document.createElement("skill-type");
+  newSkillsSection.classList.add("skill1");
+
+  // Create elements for the new skills section
+  var newSkillType = document.createElement("" + indexOfSkills);
+  newSkillType.classList.add("skill-type");
+  newSkillType.innerText = "New Skill Type:";
+
+  var newSkillsList = document.createElement("div");
+  newSkillsList.classList.add("skills-list");
+  newSkillsList.innerText = "New Skill"; // Add some default text to the skills list
+
+  // Append the elements to the container div
+  newSkillsSection.appendChild(newSkillType);
+  newSkillsSection.appendChild(newSkillsList);
+
+  // Append the new skills section to the existing skills container
+  var skillsContainer = document.getElementById("skills-container");
+  skillsContainer.appendChild(newSkillsSection);
+}
