@@ -91,21 +91,21 @@
                 <div class="section-title" id="education-title"> Education </div>
                 <div class="bar"> </div>
                 <div class="education1">
-                    <div class = "bold-left" id = "resume-college">The Name of Your University</div>
+                    <div class = "view-text-bold-left" id = "resume-college">The Name of Your University</div>
                     <div class = "bold-right" id="resume-year">
-                        <div class="entry-start" id="grad-year-start"> Start </div>
-                        <div class="entry-mid"> - </div>
-                        <div class="entry-end" id="grad-year-end"> End </div>
+                        <div class="entry" id="grad-year-start"> Start </div>
+                        <div class="entry"> - </div>
+                        <div class="entry" id="grad-year-end"> End </div>
                     </div>
                 </div>
 
                 <!-- Display Education Details Bottom-->
                 <div class = "education2">
-                    <div class = "ital-left" id = "resume-degree">Your Degree Name</div>
-                    <div class = "ital-right" id = "person-gpa">
-                        <div class="entry-start"> GPA: </div>
-                        <div class="entry-mid" id="resume-gpa"> 0.0 </div>
-                        <div class="entry-end"> / 4.0 </div>
+                    <div class = "view-text-ital-left" id = "resume-degree">Your Degree Name</div>
+                    <div class = "entry" id = "person-gpa">
+                        <div class="entry"> GPA: </div>
+                        <div class="entry" id="resume-gpa"> 0.0 </div>
+                        <div class="entry"> / 4.0 </div>
                     </div>
                 </div>
 
@@ -718,21 +718,21 @@ class ResumeInputViewAdapter
                 <div class="section-title" id="education-title"> Education </div>
                 <div class="bar"> </div>
                 <div class="education1">
-                    <div class = "bold-left" id = "resume-college">The Name of Your University</div>
+                    <div class = "view-text-bold-left" id = "resume-college">The Name of Your University</div>
                     <div class = "bold-right" id="resume-year">
-                        <div class="entry-start" id="grad-year-start"> Start </div>
-                        <div class="entry-mid"> - </div>
-                        <div class="entry-end" id="grad-year-end"> End </div>
+                        <div class="entry" id="grad-year-start"> Start </div>
+                        <div class="entry"> - </div>
+                        <div class="entry" id="grad-year-end"> End </div>
                     </div>
                 </div>
 
                 <!-- Display Education Details Bottom-->
                 <div class = "education2">
-                    <div class = "ital-left" id = "resume-degree">Your Degree Name</div>
-                    <div class = "ital-right" id = "person-gpa">
-                        <div class="entry-start"> GPA: </div>
-                        <div class="entry-mid" id="resume-gpa"> 0.0 </div>
-                        <div class="entry-end"> / 4.0 </div>
+                    <div class = "view-text-ital-left" id = "resume-degree">Your Degree Name</div>
+                    <div class = "entry" id = "person-gpa">
+                        <div class="entry"> GPA: </div>
+                        <div class="entry" id="resume-gpa"> 0.0 </div>
+                        <div class="entry"> / 4.0 </div>
                     </div>
                 </div>
 

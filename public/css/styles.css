@@ -14,6 +14,35 @@ body
 
 }
 
+/* START Header */
+
+.header
+{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    align-items: center;
+    background-color: #303134;
+    position: fixed;
+    box-shadow: 2px 4px 4px black;}
+
+
+.banner-text
+{
+    color:#e8eaed;
+    font-weight: bold;
+    font-size: 40px;
+    padding-left: 16px;
+    font-family: 'Aleck Sans';
+    letter-spacing: 5px;
+}
+
+/* END Header */
+
+
 
 .body-grid
 {
@@ -31,10 +60,21 @@ body
     background-color: aliceblue;
 }
 
-@font-face   {
-    font-family: Palatino Linotype; 
-    src: url("header_files/Pal.ttf")format('.ttf');
+@font-face {
+    font-family: 'Aleck Sans';
+    src: url('ATTAleckSans_W_Bd.ttf') format('truetype'); /* Specify format separately */
 }
+
+@font-face {
+    font-family: 'Aleck Sans Regular';
+    src: url('ATTAleckSans_W_Rg.ttf') format('truetype'); /* Specify format separately */
+}
+
+@font-face   {
+    font-family: 'Palatino Linotype'; 
+    src: url("Pal.ttf") format('.ttf');
+}
+
 
 .resume-title{
     color: black;
@@ -305,4 +345,118 @@ body
     font-size: 25px;
     padding-inline-start: 20px;
 
+}
+
+
+
+
+
+
+/* START Education Page Input Styles*/
+
+.title-text-container{
+    display: grid;
+    grid-template-columns: 45% auto;
+}
+
+.title-text{
+    font-family: 'Aleck Sans';
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-left: 100px;
+    margin-bottom: 20px;
+    
+}
+
+
+.input-education-container {
+    display: grid;
+    grid-template-rows: repeat(8, auto);
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+.input-education-item{
+    background: #303134;
+    font-size: 14px;
+    color: white;
+    font-family:'Aleck Sans Regular';    
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+    width: 85%;
+    height: 40%;
+    border-width: solid;
+    transition:  border-color .15s;
+}
+
+.input-education-item:hover{
+    border-color: #00a8e0;
+}
+
+.input-education-labels{
+    font-size: 14px;
+    color: white;
+    font-family: 'Aleck Sans';
+    padding: 10px;
+}
+
+.input-two-column{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.input-two-row{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.input-one-row{
+    display: grid;
+    grid-template-rows: auto ;
+}
+
+.input-three-column{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    -ms-grid-column-align: 5vh;
+    width: 90%;
+}
+
+
+.input-container-box{
+    background: #303134;
+    border-radius: 10px;
+    width: 90%;
+    height: fit-content;
+    transition: border-color .15s;
+    padding: 20px 20px 20px 40px;
+    margin: 0px 0px 20px 0px;
+    box-shadow: 2px 4px 4px black;
+}
+
+.submit-button{
+    font-family: 'Aleck Sans';
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background: #303134;
+    width: 95%;
+    border-style: bold;
+    border-color: #ffffff;
+    transition: border-color .15s;
+}
+
+.submit-button:hover{
+    border-color: #00a8e0;
+}
+
+
+/* END Education Page Input Styles*/
+
+
+.split-view-container{
+    display: grid;
+    grid-template-columns: auto auto;
 }
