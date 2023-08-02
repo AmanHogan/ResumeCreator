@@ -152,3 +152,177 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>Resume Creator</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    $navbar-height: 5.0rem
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="/js/profile.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar is-fixed-top is-black" style="min-height: 5.0rem;" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <div class="navbar-item">
+            <div class="resume-view-title">CV BUILDER</div>
+          </div>
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item"> Home </a>
+            <a class="navbar-item"> Documentation </a>
+          </div>
+        </div>
+    </nav>
+
+    <div style="margin-top: 5vh;">
+
+        <div class="columns is-mobile">
+
+            <div class="column has-text-centered">
+                <div class = "title is-2 has-text-white">  Profile Section </div>
+            </div>
+
+            <div class="column has-text-centered">
+                <div class = "title is-2 has-text-white"> Profile View </div>
+            </div>
+
+        </div>
+        
+        
+
+
+        <div class="columns is-mobile is-centered">
+            <div class="column has-text-centered">
+                <div class = "input-education-container" id="input-resume">
+                    <div class="input-container-box">
+                        <div class="input-two-row">
+                            <div class="input-education-labels"> Full Name </div>
+                            <input id = "input-name" class ="input-education-item" placeholder="e.g John Doe" >
+                        </div>
+                    
+                        <div class="input-three-column">
+                            <div class="input-two-row">
+                                <div class="input-education-labels"> Street Address </div>
+                                <input id = "input-address1" class ="input-education-item" placeholder="Street Address">
+                            </div>
+                            <div class="input-two-row">
+                                <div class="input-education-labels"> City Name </div>
+                                <input id = "input-address2" class ="input-education-item" placeholder="City Name">
+                            </div>
+                            <div class="input-two-row">
+                                <div class="input-education-labels"> State and Zip </div>
+                                <input id = "input-address3" class ="input-education-item" placeholder="e.g. TX, 75126">
+                            </div>
+                        </div>
+        
+                        <div class="input-two-row">
+                            <div class="input-education-labels"> College Name </div>
+                            <input id = "input-college" class ="input-education-item" placeholder="e.g  The University of Texas at Dallas">
+                        </div>
+    
+                        <div class="input-two-column">
+                            <div class="input-two-row">
+                                <div class="input-education-labels"> Start Year </div>
+                                <input id = "input-grad-start" class ="input-education-item" placeholder="e.g. 2020">
+                            </div>
+                            <div class="input-two-row">
+                                <div class="input-education-labels"> End Year </div>
+                                <input id = "input-grad-end" class ="input-education-item" placeholder="e.g. 2021">
+                            </div>
+                        </div>
+    
+                        <div class="input-two-column">
+                            <div class="input-two-row">
+                                <div class="input-education-labels"> Degree </div>
+                                <input id = "input-degree" class ="input-education-item" placeholder="e.g. B.S. in Computer Science">
+                            </div>
+                            <div class="input-two-row">
+                                <div class="input-education-labels"> GPA </div>
+                                <input id = "input-gpa" class ="input-education-item" placeholder="e.g 3.8">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-one-row">
+                        <button class="submit-button" id="submit-btn" type="button" >SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column has-text-centered">
+                <div class = "resume-view" id="resume-view">
+                    <div style="width: 816px;">
+                        <div class="resume-title" id="resume-title"> YOUR FULL NAME </div>
+                        
+                        <!-- Display Address -->
+                        <div class="address-section">
+                            <div class="address1" id="address1"> Address, </div>
+                            <div class="address2" id="address2"> City, </div>
+                            <div class="address3" id="address3"> State, Zip Code </div>
+                        </div>
+                        
+                        <!-- Display Education Details Top-->
+                        <div class="section-title" id="education-title"> Education </div>
+                        <div class="bar"> </div>
+                        <div class="education1">
+                            <div class = "text-bold-left" id = "resume-college">The Name of Your University</div>
+                            <div class = "bold-right" id="resume-year">
+                                <div class="entry-start" id="grad-year-start"> Start </div>
+                                <div class="entry-mid"> - </div>
+                                <div class="entry-end" id="grad-year-end"> End </div>
+                            </div>
+                        </div>
+        
+                        <!-- Display Education Details Bottom-->
+                        <div class = "education2">
+                            <div class = "ital-left" id = "resume-degree">Your Degree Name</div>
+                            <div class = "ital-right" id = "person-gpa">
+                                <div class="entry-start"> GPA: </div>
+                                <div class="entry-mid" id="resume-gpa"> 0.0 </div>
+                                <div class="entry-end"> / 4.0 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+            
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
