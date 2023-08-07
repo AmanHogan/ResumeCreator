@@ -1,70 +1,57 @@
-var submitButton = document.getElementById("submit-btn");
-submitButton.addEventListener('click', submitEducationData)
 
-var resumeTitleInput = document.getElementById("input-name");
-var resumeAddress1Input = document.getElementById("input-address1");
-var resumeAddress2Input = document.getElementById("input-address2");
-var resumeAddress3Input = document.getElementById("input-address3");
-var resumeCollegeInput = document.getElementById("input-college");
-var resumeStartYearInput = document.getElementById("input-grad-start");
-var resumeEndYearInput = document.getElementById("input-grad-end");
-var resumeDegreeNameInput = document.getElementById("input-degree");
-var resumeGpaInput = document.getElementById("input-gpa");
-var resumeTitle = document.getElementById("resume-title");
-var resumeAddress1 = document.getElementById("address1");
-var resumeAddress2 = document.getElementById("address2");
-var resumeAddress3 = document.getElementById("address3");
-var resumeCollege = document.getElementById("resume-college");
-var resumeStartYear = document.getElementById("grad-year-start");
-var resumeEndYear = document.getElementById("grad-year-end");
-var resumeDegreeName = document.getElementById("resume-degree");
-var resumeGpa = document.getElementById("resume-gpa");
+document.getElementById('page-buttons').addEventListener('click', function(event) {
+  const target = event.target;
+  if (target.tagName === 'BUTTON') {
+      if (target.id === 'preview-button') {
+          previewResume();
+      } else if (target.id === 'submit-button') {
+        submitEducationData();
+      }
+  }
+});
 
-resumeTitleInput.addEventListener("input", function() {resumeTitle.innerText = resumeTitleInput.value.toUpperCase();});
-resumeAddress1Input.addEventListener("input", function() {resumeAddress1.innerText = resumeAddress1Input.value;});
-resumeAddress2Input.addEventListener("input", function() {resumeAddress2.innerText = resumeAddress2Input.value;});
-resumeAddress3Input.addEventListener("input", function() {resumeAddress3.innerText = resumeAddress3Input.value;});   
-resumeCollegeInput.addEventListener("input", function() {resumeCollege.innerText = resumeCollegeInput.value;});
-resumeStartYearInput.addEventListener("input", function() {resumeStartYear.innerText = resumeStartYearInput.value;}); 
-resumeEndYearInput.addEventListener("input", function() {resumeEndYear.innerText = resumeEndYearInput.value;});
-resumeDegreeNameInput.addEventListener("input", function() {resumeDegreeName.innerText = resumeDegreeNameInput.value;});   
-resumeGpaInput.addEventListener("input", function() {resumeGpa.innerText = resumeGpaInput.value;}); 
-    
+function previewResume() {
 
-function submitEducationData(){
+  var resumeTitle = document.getElementById("resume-title");
+  var resumeAddress1 = document.getElementById("address1");
+  var resumeAddress2 = document.getElementById("address2");
+  var resumeAddress3 = document.getElementById("address3");
+  var resumeCollege = document.getElementById("resume-college");
+  var resumeGPA = document.getElementById("resume-gpa");
+  var resumeGrad = document.getElementById("grad-year-start");
+  var resumeDegree = document.getElementById("resume-degree");
 
-    // Assuming you have the following variables declared:
-    const resumeTitleInput = document.getElementById("input-name");
-    const resumeAddress1Input = document.getElementById("input-address1");
-    const resumeAddress2Input = document.getElementById("input-address2");
-    const resumeAddress3Input = document.getElementById("input-address3");
-    const resumeCollegeInput = document.getElementById("input-college");
-    const resumeStartYearInput = document.getElementById("input-grad-start");
-    const resumeEndYearInput = document.getElementById("input-grad-end");
-    const resumeDegreeNameInput = document.getElementById("input-degree");
-    const resumeGpaInput = document.getElementById("input-gpa");
-    
-    // Creating the workExperienceData object
-    const educationData = 
-    {
-        inputName: resumeTitleInput.value || "N/A",
-        address1: resumeAddress1Input.value || "N/A",
-        address2: resumeAddress2Input.value || "N/A",
-        address3: resumeAddress3Input.value || "N/A",
-        college: resumeCollegeInput.value || "N/A",
-        startYear: resumeStartYearInput.value || "N/A",
-        endYear: resumeEndYearInput.value || "N/A",
-        degreeName: resumeDegreeNameInput.value || "N/A",
-        gpa: resumeGpaInput.value || "N/A"
-    };
+  resumeTitle.innerHTML = document.getElementById("input-name").value.toUpperCase() || "First and Last Name".toUpperCase() ;
+  resumeAddress1.innerHTML = document.getElementById("input-address").value || "Address";
+  resumeAddress2.innerHTML = document.getElementById("input-city").value || "City";
+  resumeAddress3.innerHTML = document.getElementById("input-zip-state").value || "Zip, State";
+  resumeCollege.innerHTML = document.getElementById("input-college").value || "College Name";
+  resumeGPA.innerHTML = document.getElementById("input-gpa").value || "GPA";
+  resumeGrad.innerHTML = (document.getElementById("input-start").value || "Start Year") + ' - ' + (document.getElementById("input-end").value || "End Year");
+  resumeDegree.innerHTML = document.getElementById("input-degree-dp").value + ' of ' + (document.getElementById("input-degree").value || "Technical Degree") ;
+}
 
+function submitEducationData()
+{
+  // Creating the workExperienceData object
+  const educationData = 
+  {
+    inputName: document.getElementById("input-name").value.toUpperCase() || "N/A",
+    address1: document.getElementById("input-address").value || "N/A",
+    address2: document.getElementById("input-city").value || "N/A",
+    address3: document.getElementById("input-zip-state").value || "N/A",
+    college: document.getElementById("input-college").valu || "N/A",
+    startYear: document.getElementById("input-start").value || "N/A",
+    endYear: document.getElementById("input-end").value || "N/A",
+    degreeName: document.getElementById("input-degree-dp").value + ' of ' + (document.getElementById("input-degree").value || "N/A") || "N/A",
+    gpa:  document.getElementById("input-gpa").value  || "N/A"
+  };
 
-    // Build the query string with the data
+  // Build the query string with the data
   const queryString = Object.keys(educationData)
   .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(educationData[key])}`)
   .join('&');
 
-
-// Make the GET request by appending the query string to the URL
-window.location.href = `/Skills?${queryString}`;
+  // Make the GET request by appending the query string to the URL
+  window.location.href = `/Skills?${queryString}`;
 }

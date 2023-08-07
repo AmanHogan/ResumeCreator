@@ -1,284 +1,248 @@
 <!DOCTYPE html>
-<html lang="en" class="has-navbar-fixed-top">
+<html lang="en" >
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
     <title>Resume Creator</title>
     <link rel="stylesheet" href="/css/styles.css">
-    $navbar-height: 5.0rem
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" 
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+      crossorigin="anonymous">
     <script src="/js/profile.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-    <nav class="navbar is-fixed-top is-black" style="min-height: 5.0rem;" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <div class="navbar-item">
-            <div class="resume-view-title">CV BUILDER</div>
-          </div>
-        </div>
-        <div class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item"> Home </a>
-            <a class="navbar-item"> Documentation </a>
-          </div>
-        </div>
-    </nav>
 
-    <div style="margin-top: 5vh;">
-
-        <div class="columns is-mobile">
-
-            <div class="column has-text-centered">
-                <div class = "title is-2 has-text-white">  Profile Section </div>
-            </div>
-
-            <div class="column has-text-centered">
-                <div class = "title is-2 has-text-white"> Profile View </div>
-            </div>
-
-        </div>
-        
-        
-
-
-        <div class="columns is-mobile is-centered">
-            <div class="column has-text-centered">
-                <div class = "input-education-container" id="input-resume">
-                    <div class="input-container-box">
-                        <div class="input-two-row">
-                            <div class="input-education-labels"> Full Name </div>
-                            <input id = "input-name" class ="input-education-item" placeholder="e.g John Doe" >
-                        </div>
-                    
-                        <div class="input-three-column">
-                            <div class="input-two-row">
-                                <div class="input-education-labels"> Street Address </div>
-                                <input id = "input-address1" class ="input-education-item" placeholder="Street Address">
-                            </div>
-                            <div class="input-two-row">
-                                <div class="input-education-labels"> City Name </div>
-                                <input id = "input-address2" class ="input-education-item" placeholder="City Name">
-                            </div>
-                            <div class="input-two-row">
-                                <div class="input-education-labels"> State and Zip </div>
-                                <input id = "input-address3" class ="input-education-item" placeholder="e.g. TX, 75126">
-                            </div>
-                        </div>
-        
-                        <div class="input-two-row">
-                            <div class="input-education-labels"> College Name </div>
-                            <input id = "input-college" class ="input-education-item" placeholder="e.g  The University of Texas at Dallas">
-                        </div>
-    
-                        <div class="input-two-column">
-                            <div class="input-two-row">
-                                <div class="input-education-labels"> Start Year </div>
-                                <input id = "input-grad-start" class ="input-education-item" placeholder="e.g. 2020">
-                            </div>
-                            <div class="input-two-row">
-                                <div class="input-education-labels"> End Year </div>
-                                <input id = "input-grad-end" class ="input-education-item" placeholder="e.g. 2021">
-                            </div>
-                        </div>
-    
-                        <div class="input-two-column">
-                            <div class="input-two-row">
-                                <div class="input-education-labels"> Degree </div>
-                                <input id = "input-degree" class ="input-education-item" placeholder="e.g. B.S. in Computer Science">
-                            </div>
-                            <div class="input-two-row">
-                                <div class="input-education-labels"> GPA </div>
-                                <input id = "input-gpa" class ="input-education-item" placeholder="e.g 3.8">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="input-one-row">
-                        <button class="submit-button" id="submit-btn" type="button" >SUBMIT</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column has-text-centered">
-                <div class = "resume-view" id="resume-view">
-                    <div style="width: 816px;">
-                        <div class="resume-title" id="resume-title"> YOUR FULL NAME </div>
-                        
-                        <!-- Display Address -->
-                        <div class="address-section">
-                            <div class="address1" id="address1"> Address, </div>
-                            <div class="address2" id="address2"> City, </div>
-                            <div class="address3" id="address3"> State, Zip Code </div>
-                        </div>
-                        
-                        <!-- Display Education Details Top-->
-                        <div class="section-title" id="education-title"> Education </div>
-                        <div class="bar"> </div>
-                        <div class="education1">
-                            <div class = "text-bold-left" id = "resume-college">The Name of Your University</div>
-                            <div class = "bold-right" id="resume-year">
-                                <div class="entry-start" id="grad-year-start"> Start </div>
-                                <div class="entry-mid"> - </div>
-                                <div class="entry-end" id="grad-year-end"> End </div>
-                            </div>
-                        </div>
-        
-                        <!-- Display Education Details Bottom-->
-                        <div class = "education2">
-                            <div class = "ital-left" id = "resume-degree">Your Degree Name</div>
-                            <div class = "ital-right" id = "person-gpa">
-                                <div class="entry-start"> GPA: </div>
-                                <div class="entry-mid" id="resume-gpa"> 0.0 </div>
-                                <div class="entry-end"> / 4.0 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            
-
-            
-
-
-
-        </div>
-    </div>
-
-
-
-    <div class="field is-horizontal">
-        <div class="field-label is-normal">
-          <label class="label">From</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <p class="control is-expanded has-icons-left">
-              <input class="input" type="text" placeholder="Name">
-              <span class="icon is-small is-left">
-                <i class="fas fa-user"></i>
-              </span>
-            </p>
-          </div>
-          <div class="field">
-            <p class="control is-expanded has-icons-left has-icons-right">
-              <input class="input is-success" type="email" placeholder="Email" value="alex@smith.com">
-              <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
-              </span>
-              <span class="icon is-small is-right">
-                <i class="fas fa-check"></i>
-              </span>
-            </p>
-          </div>
+  <nav class="navbar is-black" style="min-height: 5.0rem;" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <div class="navbar-item">
+          <div class="resume-view-title">CV BUILDER</div>
         </div>
       </div>
-      
-      <div class="field is-horizontal">
-        <div class="field-label"></div>
-        <div class="field-body">
-          <div class="field is-expanded">
-            <div class="field has-addons">
-              <p class="control">
-                <a class="button is-static">
-                  +44
-                </a>
-              </p>
-              <p class="control is-expanded">
-                <input class="input" type="tel" placeholder="Your phone number">
-              </p>
-            </div>
-            <p class="help">Do not enter the first zero</p>
-          </div>
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item"> Home </a>
+          <a class="navbar-item"> Documentation </a>
         </div>
       </div>
+  </nav>
+
+  <div>
+
+      <div class="columns is-mobile mt-1">
+          <div class="column has-text-centered"> <div class = "title is-3 has-text-white">  Education </div> </div>
+          <div class="column has-text-centered"> <div class = "title is-3 has-text-white"> Resume </div> </div>
+      </div>
       
-      <div class="field is-horizontal">
-        <div class="field-label is-normal">
-          <label class="label">Department</label>
-        </div>
-        <div class="field-body">
-          <div class="field is-narrow">
-            <div class="control">
-              <div class="select is-fullwidth">
-                <select>
-                  <option>Business development</option>
-                  <option>Marketing</option>
-                  <option>Sales</option>
-                </select>
+      <div class="columns">
+
+          <!--------------------------------- Input View --------------------------------->
+          <div class="column mx-5 has-text-white">
+             
+                  <!-- Input Name -->
+                  <div class="columns is-multiline is-mobile">
+
+                      <div class="column is-full">
+                          <div class="title is-3 has-text-white"> Profile </div>
+                      </div>
+
+                      <!-- Name -->
+                      <div class="column is-full">
+                          <div class="columns">
+                              <div class="column is-1 has-text-white">
+                                  <div class="title is-6 has-text-white has-text-centered"> Name </div>
+                              </div>
+                              <div class="column is-11">
+                                  <div class="field-body">
+                                      <div class="field">
+                                          <input class="input" type="text" placeholder="Name, e.g., John Doe" id="input-name">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+
+                  <div class="columns">
+                      <div class="column is-full">
+                          <div class="columns">
+
+
+                              <div class="column is-1 has-text-white">
+                                  <div class="title is-6 has-text-white has-text-centered"> Addr. </div>
+                              </div>
+                              <div class="column is-3">
+                                  <div class="field-body">
+                                      <div class="field">
+                                          <input class="input" type="text" placeholder="Address, e.g., 1134 MLK Drive" id="input-address">
+                                      </div>
+                                  </div>
+                              </div>
+
+
+                              <div class="column is-1 has-text-white">
+                                  <div class="title is-6 has-text-white has-text-centered"> City </div>
+                              </div>
+                              <div class="column is-3">
+                                  <div class="field-body">
+                                      <div class="field">
+                                          <input class="input" type="text" placeholder="City, e.g, Dallas" id="input-city">
+                                      </div>
+                                  </div>
+                              </div>
+
+
+                              <div class="column is-1 has-text-white">
+                                  <div class="title is-6 has-text-white has-text-centered"> Zip & State </div>
+                              </div>
+                              <div class="column is-3">
+                                  <div class="field-body">
+                                      <div class="field">
+                                          <input class="input" type="text" placeholder="Zip & State, e.g, 51164, VA" id="input-zip-state">
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="columns is-multiline is-mobile">
+                      
+                      <div class="column is-full">
+                          <div class="title is-4 has-text-white"> College </div>
+                      </div>
+
+
+                      <div class="column is-1 has-text-white">
+                          <div class="title is-6 has-text-white"> College </div>
+                      </div>
+                      <div class="column is-11">
+                          <div class="field-body">
+                              <div class="field">
+                                  <input class="input" type="text" placeholder="College, e.g, The University of Texas at Austin" id="input-college">
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="column is-1 has-text-white">
+                          <div class="title is-6 has-text-white has-text-centered"> GPA </div>
+                      </div>
+                      <div class="column is-3 ">
+                          <div class="field-body">
+                              <div class="field has-addons is-horizontal ">
+                                  <p class="control">
+                                      <input class="input" type="text" placeholder="0.00, e.g, 3.85" id="input-gpa">
+                                  </p>
+                                  <p class="control">
+                                      <a class="button is-static">
+                                      /
+                                      </a>
+                                  </p>
+                                  <p class="control">
+                                      <a class="button is-static">
+                                          4.00
+                                      </a>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="column is-1 has-text-white">
+                          <div class="title is-6 has-text-white has-text-centered"> Grad. Year </div>
+                      </div>
+                      <div class="column is-3">
+                          <div class="field has-addons is-horizontal ">
+                              <p class="control">
+                                  <input class="input" type="text" placeholder="Start" id="input-start">
+                              </p>
+                              <p class="control">
+                                  <a class="button is-static">
+                                  /
+                                  </a>
+                              </p>
+                              <p class="control">
+                                  <input class="input" type="text" placeholder="End" id="input-end">
+                                </p>
+                          </div>
+                      </div>
+
+
+                      <div class="column is-1 has-text-white">
+                          <div class="title is-6 has-text-white has-text-centered"> Degree</div>
+                      </div>
+                      <div class="column is-3">
+                          <div class="field has-addons is-horizontal">
+                              <p class="control">
+                                  <span class="select" >
+                                  <select id="input-degree-dp">
+                                      <option>B.S.</option>
+                                      <option>M.S.</option>
+                                  </select>
+                                  </span>
+                              </p>
+                              <p class="control">
+                                  <input class="input" type="text" placeholder="Degree, e.g., Communications" id="input-degree">
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+
+              
+                  <!-- Submit and preview tabs -->
+                  <div class="columns" id="page-buttons">
+                  <div class="column">
+                      <button id="preview-button" class="button is-black is-fullwidth is-hovered"> Preview Resume</button>
+                  </div>
+                  <div class="column">
+                      <button id="submit-button" class="button is-black is-fullwidth"> Submit </button>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-      </div>
+              
+          
+          <!-- Resume View -->
+          <div class="column has-text-centered">
+              <div class = "resume-view" id="resume-view">
+                  <div style="width: 816px;">
+                      <div class="resume-title" id="resume-title"> YOUR FULL NAME </div>
+                      
+                      <!-- Display Address -->
+                      <div class="address-section">
+                          <div class="address1" id="address1"> Address, </div>
+                          <div class="address2" id="address2"> City, </div>
+                          <div class="address3" id="address3"> State, Zip Code </div>
+                      </div>
+                      
+                      <!-- Display Education Details Top-->
+                      <div class="section-title" id="education-title"> Education </div>
+                      <div class="bar"> </div>
+                      <div class="education1">
+                          <div class = "bold-left" id ="resume-college">The Name of Your University</div>
+                          <div class = "bold-right" id="resume-year">
+                              <div class="entry-start" id="grad-year-start"> Start </div>
+                          </div>
+                      </div>
       
-      <div class="field is-horizontal">
-        <div class="field-label">
-          <label class="label">Already a member?</label>
-        </div>
-        <div class="field-body">
-          <div class="field is-narrow">
-            <div class="control">
-              <label class="radio">
-                <input type="radio" name="member">
-                Yes
-              </label>
-              <label class="radio">
-                <input type="radio" name="member">
-                No
-              </label>
-            </div>
+                      <!-- Display Education Details Bottom-->
+                      <div class = "education2">
+                          <div class = "ital-left" id = "resume-degree">Your Degree Name</div>
+                          <div class = "ital-right" id = "person-gpa">
+                              <div class="entry-start"> GPA: </div>
+                              <div class="entry-mid" id="resume-gpa"> 0.0 </div>
+                              <div class="entry-end"> / 4.0 </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-      
-      <div class="field is-horizontal">
-        <div class="field-label is-normal">
-          <label class="label">Subject</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <input class="input is-danger" type="text" placeholder="e.g. Partnership opportunity">
-            </div>
-            <p class="help is-danger">
-              This field is required
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="field is-horizontal">
-        <div class="field-label is-normal">
-          <label class="label">Question</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="field is-horizontal">
-        <div class="field-label">
-          <!-- Left empty for spacing -->
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <button class="button is-primary">
-                Send message
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
+  </div>
 </body>
 
 </html>

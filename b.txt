@@ -1,0 +1,202 @@
+  <div class="columns is-mobile is-centered">
+            <div class="column has-text-centered">
+                <div class = "input-education-container" id="input-resume">
+                    <div class="input-container-box">
+                        <div class="input-two-row">
+                            <div class="input-education-labels"> Full Name </div>
+                            <input id = "input-name" class ="input-education-item" placeholder="e.g John Doe" >
+                        </div>
+                    
+                        <div class="input-three-column">
+                            <div class="input-two-row">
+                                <div class="input-education-labels"> Street Address </div>
+                                <input id = "input-address1" class ="input-education-item" placeholder="Street Address">
+                            </div>
+                            <div class="input-two-row">
+                                <div class="input-education-labels"> City Name </div>
+                                <input id = "input-address2" class ="input-education-item" placeholder="City Name">
+                            </div>
+                            <div class="input-two-row">
+                                <div class="input-education-labels"> State and Zip </div>
+                                <input id = "input-address3" class ="input-education-item" placeholder="e.g. TX, 75126">
+                            </div>
+                        </div>
+        
+                        <div class="input-two-row">
+                            <div class="input-education-labels"> College Name </div>
+                            <input id = "input-college" class ="input-education-item" placeholder="e.g  The University of Texas at Dallas">
+                        </div>
+    
+                        <div class="input-two-column">
+                            <div class="input-two-row">
+                                <div class="input-education-labels"> Start Year </div>
+                                <input id = "input-grad-start" class ="input-education-item" placeholder="e.g. 2020">
+                            </div>
+                            <div class="input-two-row">
+                                <div class="input-education-labels"> End Year </div>
+                                <input id = "input-grad-end" class ="input-education-item" placeholder="e.g. 2021">
+                            </div>
+                        </div>
+    
+                        <div class="input-two-column">
+                            <div class="input-two-row">
+                                <div class="input-education-labels"> Degree </div>
+                                <input id = "input-degree" class ="input-education-item" placeholder="e.g. B.S. in Computer Science">
+                            </div>
+                            <div class="input-two-row">
+                                <div class="input-education-labels"> GPA </div>
+                                <input id = "input-gpa" class ="input-education-item" placeholder="e.g 3.8">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-one-row">
+                        <button class="submit-button" id="submit-btn" type="button" >SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column has-text-centered">
+                
+            </div>
+
+
+            
+
+            
+
+
+
+        </div>
+    </div>
+
+
+
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label">From</label>
+        </div>
+        <div class="field-body">
+          <div class="field">
+            <p class="control is-expanded has-icons-left">
+              <input class="input" type="text" placeholder="Name">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control is-expanded has-icons-left has-icons-right">
+              <input class="input is-success" type="email" placeholder="Email" value="alex@smith.com">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="field is-horizontal">
+        <div class="field-label"></div>
+        <div class="field-body">
+          <div class="field is-expanded">
+            <div class="field has-addons">
+              <p class="control">
+                <a class="button is-static">
+                  +44
+                </a>
+              </p>
+              <p class="control is-expanded">
+                <input class="input" type="tel" placeholder="Your phone number">
+              </p>
+            </div>
+            <p class="help">Do not enter the first zero</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label">Department</label>
+        </div>
+        <div class="field-body">
+          <div class="field is-narrow">
+            <div class="control">
+              <div class="select is-fullwidth">
+                <select>
+                  <option>Business development</option>
+                  <option>Marketing</option>
+                  <option>Sales</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="field is-horizontal">
+        <div class="field-label">
+          <label class="label">Already a member?</label>
+        </div>
+        <div class="field-body">
+          <div class="field is-narrow">
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="member">
+                Yes
+              </label>
+              <label class="radio">
+                <input type="radio" name="member">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label">Subject</label>
+        </div>
+        <div class="field-body">
+          <div class="field">
+            <div class="control">
+              <input class="input is-danger" type="text" placeholder="e.g. Partnership opportunity">
+            </div>
+            <p class="help is-danger">
+              This field is required
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label">Question</label>
+        </div>
+        <div class="field-body">
+          <div class="field">
+            <div class="control">
+              <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="field is-horizontal">
+        <div class="field-label">
+          <!-- Left empty for spacing -->
+        </div>
+        <div class="field-body">
+          <div class="field">
+            <div class="control">
+              <button class="button is-primary">
+                Send message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
