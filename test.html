@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>Resume Creator</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" 
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+      crossorigin="anonymous">
+    <script src="test.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar is-black" style="min-height: 5.0rem;" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <div class="navbar-item">
+          <div class="resume-view-title">CV BUILDER</div>
+        </div>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item"> Home </a>
+          <a class="navbar-item"> Documentation </a>
+        </div>
+      </div>
+  </nav>
+
+  <div>
+
+      <div class="columns is-mobile mt-1">
+          <div class="column has-text-centered"> <div class = "title is-3 has-text-white">  Skills </div> </div>
+          <div class="column has-text-centered"> <div class = "title is-3 has-text-white"> Resume </div> </div>
+      </div>
+      
+      <div class="columns">
+
+          <!--------------------------------- Input View --------------------------------->
+          <div class="column mx-5 has-text-white">
+             
+                <!-- Input Name -->
+                <div class="columns is-multiline is-mobile">
+                    <div class="column is-full">
+                        <div class="title is-3 has-text-white"> Profile </div>
+                    </div>
+
+                    <!-- Name -->
+                    <div class="column is-full">
+                        <div class="columns">
+                            <div class="column is-1 has-text-white" >
+                                <div class="title is-6 has-text-white has-text-centered"> Section Name</div>
+                            </div>
+
+                            <div class="column is-11">
+                                <div class="field-body">
+                                    <div class="field">
+                                        <input class="input" type="text" placeholder="Name, e.g., John Doe" id="input-name">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <div class="column is-1 has-text-white">
+                                <div class="title is-6 has-text-white has-text-centered"> Skills </div>
+                            </div>
+
+                            <div class="column is-11">
+                                <textarea class="textarea" placeholder="List of Skills"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <button id="add-tech-skill-sec" class="button is-black is-fullwidth is-hovered"> Add Skill Section</button>
+                </div>
+                
+            </div>
+              
+          
+          <!-- Resume View -->
+          <div class="column has-text-centered">
+              <div class = "resume-view" id="resume-view">
+                  <div style="width: 816px;">
+                    <div class="resume-title" id="resume-title"> <%= inputName.toUpperCase() %> </div>
+                
+                    <!-- Display Address -->
+                    <div class="address-section">
+                        <div class="address1" id="address1"> <%= address1 %>, </div>
+                        <div class="address2" id="address2"> <%= address2 %> </div>
+                        <div class="address3" id="address3"> <%= address3 %></div>
+                    </div>
+                    
+                    <!-- Display Education Details Top-->
+                    <div class="section-title" id="education-title"> Education </div>
+                    <div class="bar"> </div>
+                    <div class="education1">
+                        <div class = "bold-left" id = "resume-college"><%= college %></div>
+                        <div class = "bold-right" id="resume-year">
+                            <div class="entry-start" id="grad-year-start"> <%= startYear %> </div>
+                            <div class="entry-mid"> - </div>
+                            <div class="entry-end" id="grad-year-end"> <%= endYear %> </div>
+                        </div>
+                    </div>
+    
+                    <!-- Display Education Details Bottom-->
+                    <div class = "education2">
+                        <div class = "ital-left" id = "resume-degree"><%= degreeName %></div>
+                        <div class = "ital-right" id = "person-gpa">
+                            <div class="entry-start"> GPA: </div>
+                            <div class="entry-mid" id="resume-gpa"> <%= gpa %> </div>
+                            <div class="entry-end"> / 4.0 </div>
+                        </div>
+                    </div>
+    
+                    <!-- Display Technical Skills -->
+                    <div id="skills-container">
+                            <div class="section-title" id="education-id"> Technical Skills </div>
+                        <div class="bar"> </div>
+                        <div class = "skill1">
+                            <div class = "skill-type" id = "person-major">Languages: </div>
+                            <div class = "skills-list" id = "skills-language"> </div>
+                        </div>
+                        <div class = "skill1">
+                            <div class = "skill-type" id = "person-major">Operating Systems: </div>
+                            <div class = "skills-list" id = "skills-operating"></div>
+                        </div>
+                        <div class = "skill1">
+                            <div class = "skill-type" id = "person-major">Software/Developer Tools: </div>
+                            <div class = "skills-list" id = "skills-developer"></div>
+                        </div>
+                        <div class = "skill1">
+                            <div class = "skill-type" id = "person-major">Relevant Coursework: </div>
+                            <div class = "skills-list" id = "skills-coursework"></div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+
+</html>
